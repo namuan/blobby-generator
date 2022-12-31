@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blobby Figures</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="assets/styles.css"/>
+    <link rel="icon" type="image/png" href="assets/favicon-32x32.png"/>
+    <link rel="shortcut icon" type='image/x-icon' href='assets/favicon.ico'/>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2022.12.1/pyscript.css"/>
+    <script defer src="https://pyscript.net/releases/2022.12.1/pyscript.js"></script>
+</head>
+<body>
+<py-script src="./character.py"></py-script>
+<div id="main">
+    <div class="top">
+        <div class="intro">
+            <h1> Blobby </h1>
+            <h3> Generative blob characters</h3>
+            <p> No characters are the same! Each Blobby character has a different
+                body shape. The shape is always unique, and the colors
+                and eyes are randomly applied to each shape.
+            </p>
+            <p> Feel free to download the images and any Blobby character wherever
+                you wish. Ideally, the characters can be used as avatars. </p>
+            <p><a href="https://github.com/enjeck/Blobby" target="_blank">Credit to @enjeck</a></p>
+            <p>This is just a conversion to use <a href="https://pyscript.net" target="_blank">PyScript</a> to remove
+                server side dependency</p>
+            <div class="buttons">
+                <button id="new" py-click="show_character()"> New character</button>
+                <button id="download"> Download SVG</button>
+            </div>
+        </div>
+        <div class="character">
+            <div id="svg-box">
+            </div>
+        </div>
+    </div>
+</div>
+<script src="assets/script.js"></script>
+</body>
+</html>
